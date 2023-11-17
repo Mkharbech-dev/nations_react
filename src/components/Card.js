@@ -1,13 +1,14 @@
 import React from 'react';
+import Countries from './Countries';
 
-const Card = ({country}) => {
+const Card = ({pays}) => {
     return (
         <li className='card'>
-            <img src={country.flags.svg} alt={'drapeau' + country.translations.fra.common} />
+            <img src={pays.flags.svg} alt={'drapeau' + pays.translations.fra.common} />
             <div className="infos">
-            <h2>{country.translations.fra.common}</h2>
-            <h4>{country.capital}</h4>
-            <p>Pop: {country.population.toLocaleString()}</p>
+            <h2>{pays.translations.fra.common}</h2>
+            <h4>{pays.capital}</h4>
+            <p>Pop: {pays.population.toLocaleString()}</p>
             </div>
         </li>
     );
