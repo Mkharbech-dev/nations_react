@@ -1,11 +1,12 @@
 import React from "react";
 import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 const About = () => {
   return (
-    <div>
+    <div className="">
       <Navigation />
-      <div className=" m-5">
+      <div className="about m-5">
         <h3>À PROPOS DE CE PROJET</h3>
 
         <p>
@@ -31,6 +32,7 @@ const About = () => {
         </p>
         <br />
       </div>
+      <Footer/>
     </div>
   );
 };
