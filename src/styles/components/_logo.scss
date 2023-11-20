@@ -1,17 +1,20 @@
 .logo {
   @include verticalCenter;
   margin: 5px auto;
-  width: 200px;
+  width: 40px;
   border-radius: 10px;
   padding: 5px 2px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.307);
-  background: url(../../assets/img/main.jpg) center/cover;
+  width: 40px;
+}
+.navbar-brand {
+  display: inline-flex;
+}
+.navbar-brand h5{
+  padding-left: 5px;
+  padding-top: 22px ;
+}
 
-  img {
-    height: 40px;
-  }
-  h3 {
-    margin: 6px;
-    color: $color-1;
-  }
+.navbar-collapse {
+  padding-top: 13px;
 }

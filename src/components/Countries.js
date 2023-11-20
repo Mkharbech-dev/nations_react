@@ -45,7 +45,7 @@ const Countries = () => {
         ))}
       </ul>
       {selectedRadio && <button onClick={()=>setSelectedRadio("")}>Annuler la recherche</button>}
-      <ul>
+      <ul className="container px-0">
         {data
           .filter((country) => country.continents[0].includes(selectedRadio))
           .sort((a, b) => b.population - a.population)
